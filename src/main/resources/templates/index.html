@@ -8,11 +8,6 @@
         body {
             margin: 0;
             font-family: 'Georgia', serif;
-            background-image: url('/images/logo.png');
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-            background-attachment: fixed;
             background-color: #fffaf5;
             color: #4d2c1d;
         }
@@ -20,58 +15,98 @@
         header {
             background-color: rgba(249, 225, 209, 0.85);
             padding: 10px 0;
-            text-align: center;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
 
         .nav-container {
             display: flex;
+            justify-content: center;
             align-items: center;
-            justify-content: space-between;
-            max-width: 800px;
-            margin: auto;
-            padding: 10px 20px;
+            gap: 40px;
+            flex-wrap: wrap;
         }
 
-        .nav-left, .nav-right {
+        .nav-group {
             display: flex;
-            gap: 15px;
+            gap: 20px;
+            align-items: center;
         }
 
         .logo img {
             height: 80px;
         }
 
-        nav a, .nav-left a, .nav-right a {
+        .nav-link {
             color: #4d2c1d;
             font-weight: bold;
             text-decoration: none;
             font-size: 1.1em;
         }
 
-        .hero, .content, footer {
-            background-color: rgba(255, 255, 255, 0.9);
-            margin: 40px auto;
-            padding: 40px;
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .hero h2 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            margin-top: 0;
+        }
+
+        .content {
+            padding: 40px 20px;
             max-width: 800px;
+            margin: auto;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.95);
             border-radius: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #f9e1d1;
+            color: #4d2c1d;
+            font-size: 0.9em;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 600px) {
+            .nav-container {
+                flex-direction: column;
+                gap: 20px;
+            }
         }
     </style>
 </head>
 <body>
+
 <header>
-    <h1>Lexi Bakes</h1>
-    <nav>
-        <a href="/">Home</a>
-        <a href="/menu">Menu</a>
-        <a href="/order">Order</a>
-        <a href="/about">About</a>
-    </nav>
+    <div class="nav-container">
+        <div class="nav-group">
+            <a href="/" class="nav-link">Home</a>
+            <a href="/menu" class="nav-link">Menu</a>
+        </div>
+
+        <div class="logo">
+            <img src="/images/logo.png" alt="Lexi Bakes Logo">
+        </div>
+
+        <div class="nav-group">
+            <a href="/order" class="nav-link">Order</a>
+            <a href="/about" class="nav-link">About</a>
+        </div>
+    </div>
 </header>
 
 <section class="hero">
     <h2>Sweet Treats, Baked with Love</h2>
-    <p>Baked by Lexi. Designed by you.</p>
+    <p>Baked by Lexi. Designed by you. Custom cupcakes and cakes — ready for pickup.</p>
 </section>
 
 <section class="content">
@@ -80,7 +115,8 @@
 </section>
 
 <footer>
-    &copy; 2025 Lexi Bakes. All rights reserved.
+    &copy; 2025 Lexi Bakes. Pickup only – no shipping available.
 </footer>
+
 </body>
 </html>
