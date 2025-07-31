@@ -1,6 +1,7 @@
 services:
   - type: web
     name: lexibakes
-    runtime: java
-    buildCommand: "./gradlew build"
-    startCommand: "java -jar build/libs/lexibakes-0.0.1-SNAPSHOT.jar"
+    env: docker
+    dockerfilePath: ./Dockerfile
+    plan: free
+    autoDeploy: true
