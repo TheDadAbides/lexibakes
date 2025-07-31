@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lexi Bakes Menu</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #fffaf5;
+            color: #4d2c1d;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        p.description {
+            text-align: center;
+            font-size: 1.1em;
+            margin-bottom: 30px;
+        }
+
+        .menu-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .item {
+            background-color: #f9e1d1;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        .item h3 {
+            margin: 10px 0 5px;
+            font-size: 1.3em;
+        }
+
+        .item p {
+            margin: 0;
+            font-size: 1em;
+        }
+
+        .footnote {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Lexi Bakes Menu</h1>
+<p class="description">Made-to-order sweets for birthdays, holidays, and every occasion in between.</p>
+
+<div class="menu-container">
+    <div class="item">
+        <h3>Cupcakes</h3>
+        <p>Custom themes, colors, and flavors. $30/dozen</p>
+    </div>
+    <div class="item">
+        <h3>Cakes</h3>
+        <p>Designed for your theme or event. Starting at $45</p>
+    </div>
+    <div class="item">
+        <h3>Classic Cookies</h3>
+        <p>Chocolate chip, sugar, snickerdoodle, and more. $18/dozen</p>
+    </div>
+    <div class="item">
+        <h3>Custom Cookies</h3>
+        <p>Decorated cookies tailored to your event. Pricing varies</p>
+    </div>
+    <div class="item">
+        <h3>Italian Cookies*</h3>
+        <p>Available for Christmas and special occasions. Minimum order required</p>
+    </div>
+</div>
+
+<div class="footnote">
+    * Italian cookies are seasonal and require a minimum order. Inquire for availability.
+</div>
+
+<footer>
+    Pickup only — all items made to order with love.
+</footer>
+
+</body>
+</html>
