@@ -8,12 +8,15 @@
         body {
             margin: 0;
             font-family: 'Georgia', serif;
+            background-image: url('/images/cupcake-pattern.png');
+            background-repeat: repeat;
+            background-size: 150px;
             background-color: #fffaf5;
             color: #4d2c1d;
         }
 
         header {
-            background-color: rgba(249, 225, 209, 0.85);
+            background-color: #ffffff;
             padding: 10px 0;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
@@ -33,7 +36,7 @@
         }
 
         .logo img {
-            height: 80px;
+            height: 300px;
         }
 
         .nav-link {
@@ -46,6 +49,10 @@
         .hero {
             text-align: center;
             padding: 60px 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            margin: 40px auto;
+            max-width: 800px;
+            border-radius: 10px;
         }
 
         .hero h2 {
@@ -76,10 +83,14 @@
             margin-top: 40px;
         }
 
-        @media (max-width: 600px) {
+        @media (max-width: 768px) {
             .nav-container {
                 flex-direction: column;
                 gap: 20px;
+            }
+
+            .logo img {
+                height: 200px;
             }
         }
     </style>

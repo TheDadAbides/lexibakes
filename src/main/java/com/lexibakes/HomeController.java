@@ -8,6 +8,22 @@ public class HomeController {
 
     @GetMapping("/")
     public String home() {
-        return "index";  // this loads index.html from /templates
+        return "index";  // loads index.html from templates/
     }
+
+    @GetMapping("/menu")
+    public String menu() {
+        return "menu";   // loads menu.html from templates/
+    }
+
+    // You can add more like this later:
+    // @GetMapping("/order")
+    // public String order() {
+    //     return "order";
+    // }
+
+    // @GetMapping("/about")
+    // public String about() {
+    //     return "about";
+    // }
 }
